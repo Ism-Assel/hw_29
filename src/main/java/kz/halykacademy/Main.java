@@ -18,7 +18,7 @@ public class Main {
             //Подготовка Http запроса
             HttpRequest request =
                     HttpRequest.newBuilder()
-                            .uri(new URI("http://dummy.restapiexample.com/create"))
+                            .uri(new URI("http://dummy.restapiexample.com/api/v1/create"))
                             .headers("Content-Type", "application/json")
                             .POST(HttpRequest.BodyPublishers.ofString(body))
                             .build();
